@@ -169,7 +169,9 @@ typedef unsigned bid__int64 fexcept_t;
 #if (defined(_WIN32) || defined(_WIN64))
 typedef unsigned long fexcept_t;
 #else
+#if !defined(__aarch64__)
 typedef unsigned short int fexcept_t;
+#endif
 #endif
 #endif
 #endif
