@@ -171,6 +171,8 @@ typedef unsigned long fexcept_t;
 #else
 #if !defined(__aarch64__)
 typedef unsigned short int fexcept_t;
+#else
+#include <fenv.h>
 #endif
 #endif
 #endif
